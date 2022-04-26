@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projeto Calculo Salario Liquido</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+	<header>
+		<div>
+			<h1>Calculadora Salário Líquido</h1>
+		</div>
+	</header>
+
+	<main>
+		<div class="formulario">
+			<div class="f">
+				<label class="labelTitle">Salário bruto:</label>
+				<div>
+					<label class="cifrao">R$  </label>
+					<input type="text" inputmode="numeric" class="inputSalario" name="" id="valorSalario" placeholder="0,00">
+				</div>
+				
+				<label class="labelTitle">Dependentes:</label>
+				<div>
+					<input type="number" name="" class="inputDep" id="numeroDependentes" placeholder="0">
+				</div>
+				
+
+				<label class="labelTitle">Outros descontos:</label>
+				<div>
+					<label class="cifrao">R$  </label>
+					<input type="text" inputmode="numeric" class="inputSalario" name="" id="valorDesconto" placeholder="0,00">
+				</div>
+				
+				<div class="divBtc">
+					<input type="button" name="" id="btc" value="Calcular!" onclick="calcular()">
+				</div>
+				
+			</div>
+		</div>
+
+		<table id="tbody">
+			<tr>
+				<th>Tributo</th>
+				<th>Alíquota</th>
+				<th>Proventos</th>
+				<th>Descontos</th>
+			</tr>
+			<tr>
+				<td>Salário Bruto</td>
+				<td></td>
+				<td id="salarioBruto"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Outros</td>
+				<td id="porcentagemDesconto"></td>
+				<td></td>
+				<td id="desconto"></td>
+			</tr>
+			<tr>
+				<td>INSS</td>
+				<td id="porcentagemINSS"></td>
+				<td></td>
+				<td id="descontoINSS"></td>
+			</tr>
+			<tr>
+				<td>IRRF</td>
+				<td id="porcentagemIRRF"></td>
+				<td></td>
+				<td id="descontoIRRF"></td>
+			</tr>
+			<tr class="totais">
+				<td colspan="2">Totais</td>
+				<td id="totalProvento"></td>
+				<td id="totalDesconto" class="desconto"></td>
+			</tr>
+			<tr>
+				<td colspan="2"> Valor salário líquido</td>
+				<td colspan="2" id="valorLimpo" class="renda"></td>
+			</tr>
+		</table>
+	</main>
+	<footer>
+		<div>
+			<p class="about">&copy Created By Cristofer Luchtenberg - 2022</p>
+		</div>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+
+
+	<script type="text/javascript" src="./scripts.js"></script>
+</body>
+</html>

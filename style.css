@@ -1,0 +1,168 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+table{
+	width: 80%;
+	max-width: 600px;
+	margin: 5px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+	font-size: 20px;
+	background-color: #0000;
+}
+
+main{
+	flex: 1;
+	margin: 40px 0px 40px 0px;
+}
+
+header{
+	position: relative;
+	top: 0;
+	left: 0;
+	color: white;
+	width: 100%;
+	height: 60px;
+	background-color: #101A26;
+	text-align: center;
+}
+
+header, h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.desconto{
+	color: red;
+}
+
+.formulario{
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inputSalario{
+
+	font-size: 16px;
+	padding: 10px 10px 10px 5px;
+	border: none;
+	background-color: #F2F2F2;
+	margin-bottom: 10px;
+	height: 17px;
+	border-radius: 0px 10px 10px 0px;
+	outline: none;
+}
+
+.cifrao{
+	background-color: #528DD9;
+	padding: 10px 0px 10px 10px;
+	font-size: 16px;
+	border: none;
+	height: 40px;
+	margin-bottom: 10px;
+	border: none;
+	position: relative;
+	border-radius: 10px 0px 0px 10px;
+
+}
+
+.labelTitle{
+	font-size: 22px;
+	font-weight: normal;
+	display: block;
+	padding: 2px;
+}
+
+.inputDep{
+	font-size: 16px;
+	padding: 10px 10px 10px 5px;
+	border: none;
+	background-color: #F2F2F2;
+	margin-bottom: 10px;
+	height: 17px;
+	border-radius: 10px;
+	outline: none;
+	width: 232px;
+}
+
+#btc{
+	width: 150px;
+	font-size: 22px;
+	background-color: #026873;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 50px;
+	border: none;
+	padding: 10px;
+	transition: 0.5s;
+	margin-top: 10px;
+}
+
+#btc:hover{
+	background-color: #054A59;
+	
+}
+
+.divBtc{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.renda{
+	color: green;
+}
+
+footer{
+	width: 100%;
+	background-color: #101A26;
+	height: 60px;
+}
+
+footer, p{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 480px){
+	
+	h1{
+		font-size: 25px;
+	}
+
+	table, th, td{
+		max-width: 360px;
+		font-size: 17px;
+	}
+
+	
+}
